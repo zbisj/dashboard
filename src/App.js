@@ -1,4 +1,5 @@
 import Sidebar from "./components/navigation";
+import Topbar from "./components/layout/topbar";
 import { ReactComponent as SunIcon } from "./assets/icons/lnr-sun.svg";
 import { ReactComponent as FlagIcon } from "./assets/icons/lnr-flag.svg";
 import { ReactComponent as MoveIcon } from "./assets/icons/lnr-move.svg";
@@ -10,7 +11,7 @@ import { ReactComponent as CoachIcon } from "./assets/icons/lnr-graduation-hat.s
 
 function App() {
   return (
-    <div className="">
+    <div className="d-flex">
       <Sidebar
         items={[
           { label: "home", icon: <UsersIcon />, active: true },
@@ -45,6 +46,7 @@ function App() {
           },
         ]}
       />
+      <Topbar name="Myra Sekgororoane" title="Chief Executive Officer" />
     </div>
   );
 }
