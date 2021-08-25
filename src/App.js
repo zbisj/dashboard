@@ -1,23 +1,50 @@
-import logo from './logo.svg';
-import './App.css';
+import Sidebar from "./components/navigation";
+import { ReactComponent as SunIcon } from "./assets/icons/lnr-sun.svg";
+import { ReactComponent as FlagIcon } from "./assets/icons/lnr-flag.svg";
+import { ReactComponent as MoveIcon } from "./assets/icons/lnr-move.svg";
+import { ReactComponent as StarIcon } from "./assets/icons/lnr-star.svg";
+import { ReactComponent as UsersIcon } from "./assets/icons/lnr-home.svg";
+import { ReactComponent as BicycleIcon } from "./assets/icons/lnr-bicycle.svg";
+import { ReactComponent as HeartPulseIcon } from "./assets/icons/lnr-heart-pulse.svg";
+import { ReactComponent as CoachIcon } from "./assets/icons/lnr-graduation-hat.svg";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="">
+      <Sidebar
+        items={[
+          { label: "home", icon: <UsersIcon />, active: true },
+          {
+            label: "perform",
+            icon: <FlagIcon />,
+            active: false,
+          },
+          {
+            label: "grow",
+            icon: <SunIcon />,
+          },
+          {
+            label: "live",
+            icon: <HeartPulseIcon />,
+          },
+          {
+            label: "choose",
+            icon: <MoveIcon />,
+          },
+          {
+            label: "aspire",
+            icon: <StarIcon />,
+          },
+          {
+            label: "coach",
+            icon: <CoachIcon />,
+          },
+          {
+            label: "talent",
+            icon: <BicycleIcon />,
+          },
+        ]}
+      />
     </div>
   );
 }
