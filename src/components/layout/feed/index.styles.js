@@ -11,8 +11,14 @@ export const ListItem = styled.li`
   align-items: center;
 `;
 
-export const Circle = styled.span`
+export const Circle = styled.div`
   width: 40px;
   height: 40px;
+  text-align: center;
+`;
+
+export const Square = styled.div`
+  width: 50px;
+  height: 50px;
   text-align: center;
 `;

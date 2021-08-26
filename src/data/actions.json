@@ -1,0 +1,6 @@
+[
+  { "label": "overdue", "value": 2, "color": "danger" },
+  { "label": "draft", "value": 0, "color": "warning" },
+  { "label": "pending", "value": 1, "color": "info" },
+  { "label": "completed", "value": 6, "color": "success" }
+]

@@ -5,6 +5,7 @@ export const SideNav = styled.ul`
   height: 100vh;
   padding: 10px;
   background-color: #1f4e78;
+  position: fixed;
 `;
 
 export const NavItem = styled.li`
