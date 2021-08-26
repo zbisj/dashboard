@@ -12,7 +12,7 @@ import Reel from "./components/media/reel";
 import Articles from "./components/media/article";
 
 import Carousel from "./components/media/carousel";
-
+import Resources from "./components/content/resources-list";
 import { ReactComponent as SunIcon } from "./assets/icons/lnr-sun.svg";
 import { ReactComponent as FlagIcon } from "./assets/icons/lnr-flag.svg";
 import { ReactComponent as MoveIcon } from "./assets/icons/lnr-move.svg";
@@ -68,6 +68,7 @@ function App() {
       tools={<Articles articles={articles} heading="Development Tools" />}
       carousel={<Carousel items={carouselItems} />}
       reel={<Reel items={videos} heading="Tips & Tutorials" />}
+      resources={<Resources />}
     ></MainLayout>
   );
 }
