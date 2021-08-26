@@ -3,9 +3,12 @@ import { MainLayout } from "./components/layout/main";
 import { Topbar } from "./components/layout/topbar";
 import { Sidebar } from "./components/navigation";
 import actions from "./data/actions.json";
+import articles from "./data/articles.json";
 import notifications from "./data/notifications.json";
 import carouselItems from "./data/carousel-items.json";
+import Articles from "./components/media/article";
 import Carousel from "./components/media/carousel";
+
 import { ReactComponent as SunIcon } from "./assets/icons/lnr-sun.svg";
 import { ReactComponent as FlagIcon } from "./assets/icons/lnr-flag.svg";
 import { ReactComponent as MoveIcon } from "./assets/icons/lnr-move.svg";
@@ -58,7 +61,7 @@ function App() {
           ]}
         />
       }
-      tools="Tools"
+      tools={<Articles articles={articles} heading="Development Tools" />}
       carousel={<Carousel items={carouselItems} />}
     ></MainLayout>
   );
