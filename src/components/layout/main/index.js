@@ -13,18 +13,28 @@ import {
   ResourcesSection,
 } from "./index.styles";
 
-export const MainLayout = ({ feed, sidebar, header, children }) => {
+export const MainLayout = ({
+  reel,
+  team,
+  feed,
+  tools,
+  other,
+  header,
+  sidebar,
+  carousel,
+  resources,
+}) => {
   return (
     <LayoutContainer className="">
       <MenuSection>{sidebar}</MenuSection>
       <HeaderSection className="">{header}</HeaderSection>
       <FeedSection>{feed}</FeedSection>
-      <CarouselSection></CarouselSection>
-      <ToolsSection></ToolsSection>
-      <ReelSection></ReelSection>
-      <TeamSection></TeamSection>
-      <OtherSection></OtherSection>
-      <ResourcesSection></ResourcesSection>
+      <CarouselSection>{carousel}</CarouselSection>
+      <ToolsSection>{tools}</ToolsSection>
+      <ReelSection>{reel}</ReelSection>
+      <TeamSection>{team}</TeamSection>
+      <OtherSection>{other}</OtherSection>
+      <ResourcesSection>{resources}</ResourcesSection>
     </LayoutContainer>
   );
 };
