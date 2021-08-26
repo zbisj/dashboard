@@ -2,11 +2,15 @@ import Feed from "./components/layout/feed";
 import { MainLayout } from "./components/layout/main";
 import { Topbar } from "./components/layout/topbar";
 import { Sidebar } from "./components/navigation";
+import videos from "./data/videos.json";
 import actions from "./data/actions.json";
+
 import articles from "./data/articles.json";
 import notifications from "./data/notifications.json";
 import carouselItems from "./data/carousel-items.json";
+import Reel from "./components/media/reel";
 import Articles from "./components/media/article";
+
 import Carousel from "./components/media/carousel";
 
 import { ReactComponent as SunIcon } from "./assets/icons/lnr-sun.svg";
@@ -63,6 +67,7 @@ function App() {
       }
       tools={<Articles articles={articles} heading="Development Tools" />}
       carousel={<Carousel items={carouselItems} />}
+      reel={<Reel items={videos} heading="Tips & Tutorials" />}
     ></MainLayout>
   );
 }

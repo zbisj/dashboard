@@ -3,10 +3,10 @@ export const Carousel = ({ items }) => {
   return (
     <div
       id="carouselExampleControls"
-      className="carousel slide ml-3 mt-1"
+      className="carousel slide"
       data-bs-ride="carousel"
     >
-      <div className="carousel-inner m-3">
+      <div className="carousel-inner p-3">
         {items &&
           items.map((item, index) => (
             <div key={index} className={`carousel-item ${item.state}`}>

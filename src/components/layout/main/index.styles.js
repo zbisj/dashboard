@@ -7,7 +7,7 @@ export const LayoutContainer = styled.div`
     "menu feed carousel carousel reel reel resources resources"
     "menu feed tools tools reel reel resources resources"
     "menu feed team  team team team other other";
-  grid-template-columns: 150px 2fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 150px 300px 2fr 1fr 1fr 1fr 1fr 1fr;
 `;
 
 export const HeaderSection = styled.div`
